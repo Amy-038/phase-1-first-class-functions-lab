@@ -26,11 +26,11 @@ console.log(fareDoubler(5));
 
 const fareTripler = createFareMultiplier(3);
 
-function selectDifferentDrivers(arrayOfDrivers, anyfn) {
+function selectDifferentDrivers(drivers, anyfn) {
     return anyfn();
 }
 selectDifferentDrivers(drivers, returnFirstTwoDrivers);
-
+//Why do we need the first argument?
 
 /*function returnFirstTwoDrivers() {
     return drivers.slice(0,2);
